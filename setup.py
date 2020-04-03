@@ -36,11 +36,14 @@ setuptools.setup(
     keywords = "forward proxy TCP UDP SSL/TLS",
     packages=setuptools.find_packages(),
     project_urls={
-        "Bug Tracker": __url__ + '/íssues',
+        "Bug Tracker": __url__ + '/issues',
         "Documentation": __url__+ '/wiki',
         "Source Code": __url__,
     },
-    install_requires = [ 'pyyaml' ],
+    install_requires = [
+        "pyyaml",
+        "hexdump"
+    ],
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
